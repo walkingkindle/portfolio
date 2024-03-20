@@ -15,4 +15,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  reloadPage(){
+    window.location.reload();
+  }
+
 }
