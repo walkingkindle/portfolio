@@ -1,0 +1,33 @@
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+      </div>
+    </div>
+
+
+    <div class="row no-gutters block-9 justify-content-center">
+      <div class="col-md-6 order-md-last d-flex">
+        <form [formGroup]="contactForm" (ngSubmit)="ngOnSubmit()" class="bg-light p-4 p-md-5 contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="name" placeholder="Your Name" >
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea name="" id="" cols="30" rows="7" formControlName="message" class="form-control" placeholder="Message"></textarea>
+          </div>
+          <div class="form-group d-flex justify-content-center">
+            <button type="submit" value="Send Message" class="btn btn-primary py-3 px-5">Send Message</button>
+          </div>
+        </form>
+      
+      </div>
+
+    </div>
+  </div>
+</section>
